@@ -5,6 +5,7 @@ body {
     background-color: lightgrey;
     color: red;
     font-family: 'Raleway', sans-serif;
+    margin: 2px;
 }
 
 .header-img {
@@ -14,7 +15,7 @@ body {
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: 0;
 }
 
@@ -28,6 +29,8 @@ ul {
 
 img {
     display: none;
+
+
 }
 
 li {
@@ -59,20 +62,47 @@ p {
     border-bottom: none;
 }
 
+@media screen and (min-width: 360px) {
 
-@media screen and (min-width: 900px) {
+    footer div {
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
     body {
-        background-color: lawngreen;
+        background-color: mediumpurple;
     }
 
     img {
         display: block;
     }
 
-    #social-media-links {
+    footer div {
         display: flex;
-        text-align: center;
+        justify-content: center;
         margin: 20px 80px;
-        border-bottom: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: lawngreen;
+    }
+div
+{
+    margin: 34px;
+    padding: 32px;
+}
+
+    img {
+        display: block;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+        margin: 20px 80px;
     }
 }
