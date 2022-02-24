@@ -5,6 +5,7 @@ body {
     background-color: lightgrey;
     color: red;
     font-family: 'Raleway', sans-serif;
+    margin: 2px;
 }
 
 .header-img {
@@ -14,8 +15,13 @@ body {
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left: 0;
+}
+
+main
+{
+    margin: 10px;
 }
 
 h1 {
@@ -60,10 +66,18 @@ p {
 
 }
 
+@media screen and (min-width: 360px) {
 
-@media screen and (min-width: 900px) {
+    footer div {
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
     body {
-        background-color: lawngreen;
+        background-color: mediumpurple;
     }
 
     img {
@@ -74,7 +88,31 @@ p {
         display: flex;
         justify-content: center;
         margin: 20px 80px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: lawngreen;
+    }
+div
+{
+    margin: 34px;
+    padding: 32px;
+}
+
+    img {
+        display: block;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+        margin: 20px 80px;
+<<<<<<< HEAD
         border-bottom: none;
 
+=======
+>>>>>>> c4e368eb492a12b843dfa8951484b6779d7a34a4
     }
 }
