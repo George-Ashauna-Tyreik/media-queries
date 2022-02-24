@@ -57,6 +57,7 @@ p {
     text-align: center;
     margin: 20px 80px;
     border-bottom: none;
+
 }
 
 
@@ -69,10 +70,11 @@ p {
         display: block;
     }
 
-    #social-media-links {
+    footer div {
         display: flex;
-        text-align: center;
+        justify-content: center;
         margin: 20px 80px;
         border-bottom: none;
+
     }
 }
